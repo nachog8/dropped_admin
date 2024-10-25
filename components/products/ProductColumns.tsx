@@ -36,6 +36,6 @@ export const columns: ColumnDef<ProductType>[] = [
   },
   {
     id: "actions", // ID para la columna de acciones.
-    cell: ({ row }) => <Delete item="product" id={row.original._id} /> // Renderiza el componente Delete para eliminar el producto.
+    cell: ({ row }) => <Delete item="product" id={row.original._id} />, // Renderiza el componente Delete para eliminar el producto.
   },
 ];

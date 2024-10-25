@@ -14,7 +14,7 @@ export const columns: ColumnDef<OrderItemType>[] = [
           href={`/products/${row.original.product._id}`} // Enlace al detalle del producto
           className="hover:text-[rgba(6,173,239,1)]" // Clase para el efecto hover
         >
-          {row.original.product.title} // Muestra el título del producto
+          {row.original.product.title} {/* Muestra el título del producto */}
         </Link>
       );
     },

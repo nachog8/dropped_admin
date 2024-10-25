@@ -26,7 +26,7 @@ const TopBar = () => {
             key={link.label} // Clave única para el enlace
             className={`flex gap-4 text-body-medium ${pathname === link.url ? "text-blue-1" : "text-grey-1"}`} // Clase para el enlace, cambia de color si es la ruta activa
           >
-            <p>{link.label}</p> // Texto del enlace
+            <p>{link.label}</p> {/* Texto del enlace */}
           </Link>
         ))}
       </div>
