@@ -14,7 +14,7 @@ export const columns: ColumnDef<CollectionType>[] = [
         href={`/collections/${row.original._id}`} // Enlace a la ruta de la colección
         className="hover:text-[rgba(6,173,239,1)]" // Estilo hover
       >
-        {row.original.title} // Muestra el título de la colección
+        {row.original.title} {/* Muestra el título de la colección */}
       </Link>
     ),
   },

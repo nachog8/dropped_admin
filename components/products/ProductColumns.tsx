@@ -13,7 +13,7 @@ export const columns: ColumnDef<ProductType>[] = [
         href={`/products/${row.original._id}`} // Enlace a la página del producto utilizando su ID.
         className="hover:text-[rgba(6,173,239,1)]" // Estilo para el enlace en hover.
       >
-        {row.original.title} // Muestra el título del producto.
+        {row.original.title} {/* Muestra el título de la producto */}
       </Link>
     ),
   },
