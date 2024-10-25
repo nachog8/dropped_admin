@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "../globals.css";
 
 import { ClerkProvider } from "@clerk/nextjs";
+import { esES } from '@clerk/localizations'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,8 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
-      <html lang="en">
+    <ClerkProvider
+      localization={esES}
+    >
+      <html lang="es" suppressHydrationWarning={true}>
         <body className={inter.className}>{children}</body>
       </html>
     </ClerkProvider>
